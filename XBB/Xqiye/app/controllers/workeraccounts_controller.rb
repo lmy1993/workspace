@@ -1,6 +1,6 @@
 class WorkeraccountsController < ApplicationController
   before_action :set_workeraccount, only: [:show,:edit,:update,:destroy,:reset]
-  before_filter :authenticate_workeraccount!
+  #before_filter :authenticate_workeraccount!
   def index
     #@workers = Workeraccount.all
     @workeraccounts = Workeraccount.paginate(page: params[:page], per_page: 10).order(updated_at: :desc)

@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170419061140) do
 
-  create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "address"
     t.decimal  "lat",               precision: 10, scale: 6
     t.decimal  "lng",               precision: 10, scale: 6
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170419061140) do
     t.index ["addressowner_type", "addressowner_id"], name: "index_addresses_on_addressowner_type_and_addressowner_id", using: :btree
   end
 
-  create_table "stations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "stations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "address"
     t.string   "comment"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20170419061140) do
     t.datetime "updated_at",                          null: false
   end
 
-  create_table "workeraccounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+  create_table "workeraccounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "username",               default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
