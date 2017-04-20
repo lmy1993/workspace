@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+=======
 # MySQL. Versions 5.0 and up are supported.
 #
 # Install the MySQL driver
@@ -8,11 +15,23 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
+>>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
 #
 default: &default
   adapter: mysql2
   encoding: utf8
   database: XBB
+<<<<<<< HEAD
+  username: root
+  password: root
+
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+ # database: db/development.sqlite3
+=======
   pool: 5
   username: root
   password: root
@@ -21,12 +40,20 @@ default: &default
 development:
   <<: *default
   #database: qiye_development
+>>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
+  #database: db/test.sqlite3
+
+production:
+  <<: *default
+ # database: db/production.sqlite3
+=======
   #database: qiye_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -53,3 +80,4 @@ production:
   # database: qiye_production
   # username: qiye
   # password: <%= ENV['QIYE_DATABASE_PASSWORD'] %>
+>>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
