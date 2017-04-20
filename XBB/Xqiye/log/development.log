@@ -1,0 +1,2154 @@
+Started GET "/" for 127.0.0.1 at 2017-04-13 09:54:08 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (7.6ms)
+Completed 200 OK in 122ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1757.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (457.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (50.3ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (48.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateWorkerMessages (20170413051421)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (623.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (15.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (10.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (26.6ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateWorkerMessages (20170413082226)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (79.9ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateWorkerMessages (20170413083348)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[35m (17.9ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateWorkerMessages (20170413083603)
+  [1m[35m (743.5ms)[0m  [1m[35mCREATE TABLE `worker_messages` (`id` int AUTO_INCREMENT PRIMARY KEY, `worker_id` varchar(255), `worker_name` varchar(255), `sex` varchar(255), `age` int, `birthday` datetime, `role` varchar(255), `academic` varchar(255), `factory_id` int, `region` varchar(255), `delFlag` varchar(255), `S_01` varchar(255), `S_o2` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (12.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (60.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170413083603')[0m
+  [1m[35m (50.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (103.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-04-13 08:36:26', '2017-04-13 08:36:26')[0m
+  [1m[35m (37.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (13.3ms)[0m  [1m[35mSHOW CREATE TABLE `worker_messages`[0m
+  [1m[35m (1.1ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'worker_messages'[0m
+Started GET "/" for 127.0.0.1 at 2017-04-13 16:39:49 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (9.2ms)
+Completed 200 OK in 142ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_message" for 127.0.0.1 at 2017-04-13 16:42:46 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/worker_message"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.0ms)
+  Rendered collection of /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (519.8ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (85.4ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (32.3ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1455.2ms)
+Started GET "/worker_message/new" for 127.0.0.1 at 2017-04-13 16:43:05 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/worker_message/new"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `call'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (5.1ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.6ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-13 16:44:19 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (579.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (583.0ms)
+Completed 200 OK in 3338ms (Views: 2903.4ms | ActiveRecord: 188.4ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 09:25:43 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (193.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (134.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (141.3ms)
+Completed 200 OK in 1298ms (Views: 1102.1ms | ActiveRecord: 12.9ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 09:36:56 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dW/JLAF599/ULwtWLuXe1dsqOugo2DvzupTDSN6Va4DDiH51ar4t0ppqpem5wOpFSEyzXaaP66alwjEVOhTZqQ==", "worker_message"=>{"worker_id"=>"0000001", "worker_name"=>"赵照", "sex"=>"男", "age"=>"25", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"01", "birthday(5i)"=>"25", "role"=>"取送人员", "academic"=>"大专", "factory_id"=>"2", "region"=>"北京市海淀区", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (11.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (124.5ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `age`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', '赵照', '男', 25, '2012-04-14 01:25:00', '取送人员', '大专', 2, '北京市海淀区', '', '', '', '2017-04-14 01:36:57', '2017-04-14 01:36:57')[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 136.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE8\xB5\xB5\xE7\x85\xA7' for column 'worker_name' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `age`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', '赵照', '男', 25, '2012-04-14 01:25:00', '取送人员', '大专', 2, '北京市海淀区', '', '', '', '2017-04-14 01:36:57', '2017-04-14 01:36:57')):
+  
+app/controllers/worker_messages_controller.rb:30:in `block in create'
+app/controllers/worker_messages_controller.rb:29:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.8ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (184.7ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:21:52 +0800
+  
+ArgumentError (must be called with a path and/or options):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (38.7ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.1ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (151.0ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:22:43 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (317.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (432.8ms)
+Completed 200 OK in 2759ms (Views: 1114.7ms | ActiveRecord: 1010.1ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:23:02 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (162.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (165.0ms)
+Completed 200 OK in 642ms (Views: 617.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/" for 127.0.0.1 at 2017-04-14 10:23:09 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (61.3ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 288ms (Views: 200.9ms | ActiveRecord: 61.3ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:23:14 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (53.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 134ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:25:05 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (16.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:25:07 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (41.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 129ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:25:08 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (41.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:25:10 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (44.8ms)
+  Rendered worker_messages/new.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 139ms (Views: 129.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:32:40 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (26.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 140ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:33:17 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (28.8ms)
+  Rendered worker_messages/new.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:33:56 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (33.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 78ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:37:38 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (1126.3ms)
+  Rendered worker_messages/new.html.erb within layouts/application (1129.0ms)
+Completed 200 OK in 1199ms (Views: 1196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:38:30 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (49.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 116ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:38:32 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (35.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 90ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:40:42 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (41.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 115ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:40:44 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (64.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (69.4ms)
+Completed 200 OK in 178ms (Views: 176.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:41:10 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (39.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 124ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:41:11 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (46.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (51.7ms)
+Completed 200 OK in 120ms (Views: 119.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:42:17 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (33.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 10:44:31 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (32.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 103ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:08:44 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (40.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 280ms (Views: 261.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:08:50 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (154.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (164.6ms)
+Completed 200 OK in 238ms (Views: 223.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:08:53 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (37.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 115ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:09:43 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ugDkvOvf8zXntewO6WS25AsRFZpk/L9sLYxA5sXkM3QM51PlgBgpOKnwQrF+QYJ0mHecL+qrbzky2rK7IWWBXQ==", "worker_message"=>{"worker_id"=>"1111", "worker_name"=>"asd", "role"=>"1", "age"=>"25", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"02", "birthday(5i)"=>"25", "factory_id"=>"2", "region"=>"dddff", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (369.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (716.8ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `age`, `birthday`, `role`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('1111', 'asd', 25, '2012-04-14 02:25:00', '1', 2, 'dddff', '', '', '', '2017-04-14 06:09:43', '2017-04-14 06:09:43')[0m
+  [1m[35m (335.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/1
+Completed 302 Found in 2747ms (ActiveRecord: 1421.5ms)
+
+
+Started GET "/worker_messages/1" for 127.0.0.1 at 2017-04-14 14:09:46 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorkerMessage Load (72.0ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 1 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 554ms (Views: 79.0ms | ActiveRecord: 72.0ms)
+
+
+Started GET "/worker_messages/1/edit" for 127.0.0.1 at 2017-04-14 14:10:00 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorkerMessage Load (16.0ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 1 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (38.5ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 251ms (Views: 154.9ms | ActiveRecord: 16.0ms)
+
+
+Started PATCH "/worker_messages/1" for 127.0.0.1 at 2017-04-14 14:10:09 +0800
+Processing by WorkerMessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CedUE5j4P7aNc3B1H9Az2P8KXq2CiHq3nc1pIqkicWoXd7Oos3RbUcitxXr/BJeejXzK9AxW6RreaeDtHEe31A==", "worker_message"=>{"worker_id"=>"1111", "worker_name"=>"asd", "role"=>"1", "age"=>"25", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"02", "birthday(5i)"=>"25", "factory_id"=>"2", "region"=>"dddff", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Update Worker message", "id"=>"1"}
+  [1m[36mWorkerMessage Load (37.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 1 LIMIT 1[0m
+  [1m[35m (41.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/1
+Completed 302 Found in 97ms (ActiveRecord: 84.3ms)
+
+
+Started GET "/worker_messages/1" for 127.0.0.1 at 2017-04-14 14:10:10 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWorkerMessage Load (48.6ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 1 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 93ms (Views: 42.0ms | ActiveRecord: 48.6ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 14:10:35 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (2.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 103ms (Views: 99.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:10:53 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (16.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (85.8ms)
+Completed 200 OK in 149ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:11:02 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K4DK5LzOaArYGAyg73tQKqQb789iGNAGuU0S+aHWu4Ov0CDZTiuzd0yGaJCRk6hqOsr1EGUbZchSNylih2syZQ==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"", "role"=>"3", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"10", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (77.9ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '', '2017-04-14 06:10:00', '3', '', '', '', '', '2017-04-14 06:11:02', '2017-04-14 06:11:02')[0m
+  [1m[35m (234.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/2
+Completed 302 Found in 322ms (ActiveRecord: 312.5ms)
+
+
+Started GET "/worker_messages/2" for 127.0.0.1 at 2017-04-14 14:11:03 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWorkerMessage Load (0.6ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 2 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 71ms (Views: 56.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 14:11:12 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (10.7ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 118ms (Views: 106.1ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:11:22 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (36.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:12:54 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (247.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (249.6ms)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `男' for #<#<Class:0x00000002f9c430>:0x007fb7bc1504e8>):
+    23: 
+    24:   <div class="field">
+    25:     <%= f.label :sex %>
+    26:      <%= f.select :role, options_for_select([  ['请选择',0],['男',男], ['女', 2]])%>
+    27:   </div>
+    28: 
+    29:   <div class="field">
+  
+app/views/worker_messages/_form.html.erb:26:in `block in _app_views_worker_messages__form_html_erb__1628185785635518419_70213557559240'
+app/views/worker_messages/_form.html.erb:1:in `_app_views_worker_messages__form_html_erb__1628185785635518419_70213557559240'
+app/views/worker_messages/new.html.erb:3:in `_app_views_worker_messages_new_html_erb___4117296092691046823_70213555619760'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.1ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.9ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:13:04 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (82.7ms)
+  Rendered worker_messages/new.html.erb within layouts/application (89.0ms)
+Completed 200 OK in 154ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:15:18 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zfUlx55cAn1M/8U0BaFpSt/Br2AM+oD38iDdnUQ1C+17EpKe9ZvYcAK6a4uShF3aTKcm1YKtUKLtdi/AoLS5xA==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"13", "factory_id"=>"", "region"=>"", "delFlag"=>"3", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (56.2ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '', '2017-04-14 06:13:00', '0', '', '3', '', '', '2017-04-14 06:15:18', '2017-04-14 06:15:18')[0m
+  [1m[35m (120.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/3
+Completed 302 Found in 190ms (ActiveRecord: 176.7ms)
+
+
+Started GET "/worker_messages/3" for 127.0.0.1 at 2017-04-14 14:15:19 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWorkerMessage Load (3.5ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 3 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 202ms (Views: 195.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 14:15:32 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 14:16:18 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (53.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.8ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 126ms (Views: 106.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:16:21 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (25.8ms)
+  Rendered worker_messages/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 122ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:16:27 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fSPP+7mRkvPoTmpBD71BB1oMu4Q2BkrWGo+AGNPu8r35cyXGS3RJjnzQDnFxVblHxN2hWzEF/xjx9buD9VN7Ww==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"发发", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"16", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (89.0ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '发发', '2017-04-14 06:16:00', '0', '', '', '', '', '2017-04-14 06:16:27', '2017-04-14 06:16:27')[0m
+  [1m[35m (24.9ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 259ms (ActiveRecord: 117.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE5\x8F\x91\xE5\x8F\x91' for column 'worker_name' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '发发', '2017-04-14 06:16:00', '0', '', '', '', '', '2017-04-14 06:16:27', '2017-04-14 06:16:27')):
+  
+app/controllers/worker_messages_controller.rb:30:in `block in create'
+app/controllers/worker_messages_controller.rb:29:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.1ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.2ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.2ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.6ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:22:25 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (207.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fSPP+7mRkvPoTmpBD71BB1oMu4Q2BkrWGo+AGNPu8r35cyXGS3RJjnzQDnFxVblHxN2hWzEF/xjx9buD9VN7Ww==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"发发", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"16", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (21.2ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '发发', '2017-04-14 06:16:00', '0', '', '', '', '', '2017-04-14 06:22:25', '2017-04-14 06:22:25')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 23.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE5\x8F\x91\xE5\x8F\x91' for column 'worker_name' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '发发', '2017-04-14 06:16:00', '0', '', '', '', '', '2017-04-14 06:22:25', '2017-04-14 06:22:25')):
+  
+app/controllers/worker_messages_controller.rb:30:in `block in create'
+app/controllers/worker_messages_controller.rb:29:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (29.1ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.1ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.6ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:22:35 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fSPP+7mRkvPoTmpBD71BB1oMu4Q2BkrWGo+AGNPu8r35cyXGS3RJjnzQDnFxVblHxN2hWzEF/xjx9buD9VN7Ww==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"发发", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"16", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '发发', '2017-04-14 06:16:00', '0', '', '', '', '', '2017-04-14 06:22:35', '2017-04-14 06:22:35')[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 9.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE5\x8F\x91\xE5\x8F\x91' for column 'worker_name' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', '发发', '2017-04-14 06:16:00', '0', '', '', '', '', '2017-04-14 06:22:35', '2017-04-14 06:22:35')):
+  
+app/controllers/worker_messages_controller.rb:30:in `block in create'
+app/controllers/worker_messages_controller.rb:29:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:22:51 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (53.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 258ms (Views: 256.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:23:00 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dgvGpkvdvFc1BfyQyjwKfaHATrewuciidKI93ps16WrA7HH/IBpmWntAUi9dGT7tMqbHAj7uGPdr9M+Df7RbQw==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"wdf市", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"22", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (17.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', 'wdf市', '2017-04-14 06:22:00', '0', '', '', '', '', '2017-04-14 06:23:00', '2017-04-14 06:23:00')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 18.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE5\xB8\x82' for column 'worker_name' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('', 'wdf市', '2017-04-14 06:22:00', '0', '', '', '', '', '2017-04-14 06:23:00', '2017-04-14 06:23:00')):
+  
+app/controllers/worker_messages_controller.rb:30:in `block in create'
+app/controllers/worker_messages_controller.rb:29:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (38.9ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.2ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:27:42 +0800
+  
+ActionController::RoutingError (undefined method `validates' for WorkerMessagesController:Class):
+  
+app/controllers/worker_messages_controller.rb:3:in `<class:WorkerMessagesController>'
+app/controllers/worker_messages_controller.rb:1:in `<top (required)>'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (137.6ms)
+  Rendered collection of /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (355.2ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (986.4ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1738.4ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:29:48 +0800
+  
+ActionController::RoutingError (undefined method `validates' for WorkerMessagesController:Class):
+  
+app/controllers/worker_messages_controller.rb:3:in `<class:WorkerMessagesController>'
+app/controllers/worker_messages_controller.rb:1:in `<top (required)>'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.7ms)
+  Rendered collection of /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (4.0ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.2ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:30:07 +0800
+  
+ActionController::RoutingError (undefined method `validates' for WorkerMessagesController:Class):
+  
+app/controllers/worker_messages_controller.rb:3:in `<class:WorkerMessagesController>'
+app/controllers/worker_messages_controller.rb:1:in `<top (required)>'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered collection of /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (14.5ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.5ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:34:33 +0800
+  
+ActionController::RoutingError (undefined method `validates' for WorkerMessagesController:Class):
+  
+app/controllers/worker_messages_controller.rb:3:in `<class:WorkerMessagesController>'
+app/controllers/worker_messages_controller.rb:1:in `<top (required)>'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered collection of /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [8 times] (39.1ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (26.1ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (123.3ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:34:56 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dgvGpkvdvFc1BfyQyjwKfaHATrewuciidKI93ps16WrA7HH/IBpmWntAUi9dGT7tMqbHAj7uGPdr9M+Df7RbQw==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"wdfww", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"22", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 668ms (ActiveRecord: 557.8ms)
+
+
+  
+NoMethodError (undefined method `name' for #<WorkerMessage:0x007fb7bc4b7dc0>):
+  
+app/controllers/worker_messages_controller.rb:35:in `block in create'
+app/controllers/worker_messages_controller.rb:34:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (34.6ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.3ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.0ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:37:16 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dgvGpkvdvFc1BfyQyjwKfaHATrewuciidKI93ps16WrA7HH/IBpmWntAUi9dGT7tMqbHAj7uGPdr9M+Df7RbQw==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"wdfww", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"22", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (40.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 176ms (Views: 115.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:38:49 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hBFeafxlEYX4t77C9XdJWujR/fTr1B93Z5PPu6kFrHMy9ukwl6LLiLbyEH1iUn3Ke7d0QWWDzyJ4xT3mTYQeWg==", "worker_message"=>{"worker_id"=>"11", "worker_name"=>"wdfww", "role"=>"0", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"22", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (42.5ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('11', 'wdfww', '2017-04-14 06:22:00', '0', '', '', '', '', '2017-04-14 06:38:49', '2017-04-14 06:38:49')[0m
+  [1m[35m (132.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/4
+Completed 302 Found in 187ms (ActiveRecord: 174.9ms)
+
+
+Started GET "/worker_messages/4" for 127.0.0.1 at 2017-04-14 14:38:49 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mWorkerMessage Load (4.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 4 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 207ms (Views: 115.2ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:42:45 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hBFeafxlEYX4t77C9XdJWujR/fTr1B93Z5PPu6kFrHMy9ukwl6LLiLbyEH1iUn3Ke7d0QWWDzyJ4xT3mTYQeWg==", "worker_message"=>{"worker_id"=>"1122", "worker_name"=>"wdfwwff", "role"=>"2", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"22", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (38.6ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('1122', 'wdfwwff', '2017-04-14 06:22:00', '2', '', '', '', '', '2017-04-14 06:42:45', '2017-04-14 06:42:45')[0m
+  [1m[35m (42.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/5
+Completed 302 Found in 124ms (ActiveRecord: 81.4ms)
+
+
+Started GET "/worker_messages/5" for 127.0.0.1 at 2017-04-14 14:42:45 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mWorkerMessage Load (4.5ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 5 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 95ms (Views: 87.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/worker_messages/5/edit" for 127.0.0.1 at 2017-04-14 14:44:16 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mWorkerMessage Load (16.0ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 5 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (52.4ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 166ms (Views: 118.6ms | ActiveRecord: 16.0ms)
+
+
+Started PATCH "/worker_messages/5" for 127.0.0.1 at 2017-04-14 14:44:32 +0800
+Processing by WorkerMessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5JT5+f1INsmjC7V9xw+EQp34hhr1ijMQYa7fv8ZQ+tPrICb2gMs0WMV66InIitjo0r/4RCg6EH+d1oXL27Gf4A==", "worker_message"=>{"worker_id"=>"1122", "worker_name"=>"wdfwwff", "role"=>"大专", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"22", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Update Worker message", "id"=>"5"}
+  [1m[36mWorkerMessage Load (34.3ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (79.8ms)[0m  [1m[33mUPDATE `worker_messages` SET `role` = '大专', `updated_at` = '2017-04-14 06:44:32' WHERE `worker_messages`.`id` = 5[0m
+  [1m[35m (30.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 144.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE5\xA4\xA7\xE4\xB8\x93' for column 'role' at row 1: UPDATE `worker_messages` SET `role` = '大专', `updated_at` = '2017-04-14 06:44:32' WHERE `worker_messages`.`id` = 5):
+  
+app/controllers/worker_messages_controller.rb:45:in `block in update'
+app/controllers/worker_messages_controller.rb:44:in `update'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.0ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.8ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:50:59 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (31.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 131ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:51:37 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLb2XXuJiu7VMLWJCwivdI1wAQaD/oL9pu/RbVvUTw0OUUEEEE5Q45t1GzacLZvkHhaIsw2pUqi5uSMwv1X9JA==", "worker_message"=>{"worker_id"=>"12345", "worker_name"=>"", "role"=>"本科毕业", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"50", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.1ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('12345', '', '2017-04-14 06:50:00', '本科毕业', '', '', '', '', '2017-04-14 06:51:37', '2017-04-14 06:51:37')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 5.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE6\x9C\xAC\xE7\xA7\x91...' for column 'role' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `birthday`, `role`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('12345', '', '2017-04-14 06:50:00', '本科毕业', '', '', '', '', '2017-04-14 06:51:37', '2017-04-14 06:51:37')):
+  
+app/controllers/worker_messages_controller.rb:31:in `block in create'
+app/controllers/worker_messages_controller.rb:30:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.5ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.1ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 14:56:53 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (26.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 154ms (Views: 149.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 14:57:12 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rvPQ5mnPMdnc2kN4yCEmNp9g0UP7LGDJGEwsLFn2azYYFGe/Agjr1JKf7cdfBBKmDAZY9nV7sJwHGt5xvXfZHw==", "worker_message"=>{"worker_id"=>"1234566", "worker_name"=>"aaaaa", "sex"=>"男", "age"=>"1", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"06", "birthday(5i)"=>"56", "role"=>"管理员", "academic"=>"大专", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.7ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `age`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('1234566', 'aaaaa', '男', 1, '2017-04-14 06:56:00', '管理员', '大专', '', '', '', '', '2017-04-14 06:57:12', '2017-04-14 06:57:12')[0m
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 8.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE7\x94\xB7' for column 'sex' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `age`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('1234566', 'aaaaa', '男', 1, '2017-04-14 06:56:00', '管理员', '大专', '', '', '', '', '2017-04-14 06:57:12', '2017-04-14 06:57:12')):
+  
+app/controllers/worker_messages_controller.rb:31:in `block in create'
+app/controllers/worker_messages_controller.rb:30:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.4ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.0ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.1ms)
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:02:20 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (44.6ms)
+  Rendered worker_messages/new.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 128ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 15:02:41 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pUs+JqBefkHP1nmroDjnknw6PUqiq6NS7c4t53EEVWsTrIl/y5mkTIGT1xQ3HdMC71y0/yz8cwfymN+6lYXnQg==", "worker_message"=>{"worker_id"=>"01", "worker_name"=>"aaa", "sex"=>"man", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"02", "role"=>"请选择", "academic"=>"请选择", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('01', 'aaa', 'man', '2017-04-14 07:02:00', '请选择', '请选择', '', '', '', '', '2017-04-14 07:02:41', '2017-04-14 07:02:41')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE8\xAF\xB7\xE9\x80\x89...' for column 'role' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('01', 'aaa', 'man', '2017-04-14 07:02:00', '请选择', '请选择', '', '', '', '', '2017-04-14 07:02:41', '2017-04-14 07:02:41')):
+  
+app/controllers/worker_messages_controller.rb:31:in `block in create'
+app/controllers/worker_messages_controller.rb:30:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (31.9ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.1ms)
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:05:33 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (4.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 133ms (Views: 119.2ms | ActiveRecord: 4.5ms)
+
+
+Started DELETE "/worker_messages/2" for 127.0.0.1 at 2017-04-14 15:05:44 +0800
+Processing by WorkerMessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kuQGDQoimD4VH5dz5pAJNSufVJ3FKY5pG1fHHznA+AckA7FUYeVCM1taOcxxtT2luPndKEt+XjwEATVC3UFKLg==", "id"=>"2"}
+  [1m[36mWorkerMessage Load (1.0ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (72.3ms)[0m  [1m[31mDELETE FROM `worker_messages` WHERE `worker_messages`.`id` = 2[0m
+  [1m[35m (191.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages
+Completed 302 Found in 469ms (ActiveRecord: 264.8ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:05:45 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (12.7ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 109ms (Views: 94.3ms | ActiveRecord: 12.7ms)
+
+
+Started DELETE "/worker_messages/3" for 127.0.0.1 at 2017-04-14 15:05:48 +0800
+Processing by WorkerMessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"70mfG4Uh+AFU3urHpC/ebFpm5RWupkjk5LQk7YDmYoVZrihC7uYiDBqbRHgzCur8yQBsoCDxmLH74tawZGfQrA==", "id"=>"3"}
+  [1m[36mWorkerMessage Load (0.6ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 3 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (56.9ms)[0m  [1m[31mDELETE FROM `worker_messages` WHERE `worker_messages`.`id` = 3[0m
+  [1m[35m (115.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages
+Completed 302 Found in 180ms (ActiveRecord: 172.9ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:05:48 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.7ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 102ms (Views: 99.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/worker_messages/4" for 127.0.0.1 at 2017-04-14 15:05:50 +0800
+Processing by WorkerMessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Y3Kkk2mFnPtJgL9MZkQnRzdazvKeai7WySQ4uw9EFRXVlRPKAkJG9gfFEfPxYRPXpDxHRxA9/oPWcsrm68WnPA==", "id"=>"4"}
+  [1m[36mWorkerMessage Load (3.3ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (67.6ms)[0m  [1m[31mDELETE FROM `worker_messages` WHERE `worker_messages`.`id` = 4[0m
+  [1m[35m (51.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages
+Completed 302 Found in 129ms (ActiveRecord: 122.6ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:05:50 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/worker_messages/5" for 127.0.0.1 at 2017-04-14 15:05:54 +0800
+Processing by WorkerMessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rrQnKHj4wsg/wZFDBxVE62t7I+KVr3wH/r6NfjP5EJ0YU5BxEz8YxXGEP/yQMHB7+B2qVxv4rFLh6H8j13iitA==", "id"=>"5"}
+  [1m[36mWorkerMessage Load (1.3ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (31.7ms)[0m  [1m[31mDELETE FROM `worker_messages` WHERE `worker_messages`.`id` = 5[0m
+  [1m[35m (61.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages
+Completed 302 Found in 99ms (ActiveRecord: 94.7ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:05:54 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/worker_messages/1" for 127.0.0.1 at 2017-04-14 15:05:58 +0800
+Processing by WorkerMessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"16I1T5YKz0HlX4h8rxojfealVPAp0kawOqlKo/6Iv+JhRYIW/c0VTKsaJsM4PxftdcPdRaeFluUl/7j+GgkNyw==", "id"=>"1"}
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 1 LIMIT 1[0m
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[31mDELETE FROM `worker_messages` WHERE `worker_messages`.`id` = 1[0m
+  [1m[35m (212.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages
+Completed 302 Found in 225ms (ActiveRecord: 219.3ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:05:58 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:06:05 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (34.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 15:10:57 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"47InmDul08fcJgIRvYvcw0Jyy36M4Q3akkW8LNZcr2xn4s2lyUAIuki4ZiHDYySD3KPRoYviuBR5P4e38OEmig==", "worker_message"=>{"worker_id"=>"0000001", "worker_name"=>"", "sex"=>"select", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"06", "role"=>"请选择", "academic"=>"请选择", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/frank/workspace/XBB/app/models/worker_message.rb:6: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/worker_message.rb:6: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/worker_messages_controller.rb:28:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (33.7ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 15:11:53 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"47InmDul08fcJgIRvYvcw0Jyy36M4Q3akkW8LNZcr2xn4s2lyUAIuki4ZiHDYySD3KPRoYviuBR5P4e38OEmig==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"", "sex"=>"select", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"06", "role"=>"请选择", "academic"=>"请选择", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (46.6ms)
+  Rendered worker_messages/new.html.erb within layouts/application (50.4ms)
+Completed 200 OK in 156ms (Views: 99.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:14:39 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (34.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 131ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 15:14:41 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6lGGaGml492gWa+mGwSp9HbLOyHIEZSimfZNVvj2rldctjExAmI50O4cARmMIZ1k5a2ylEZGRPeGoL8LHHccfg==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"", "sex"=>"select", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"14", "role"=>"请选择", "academic"=>"请选择", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (36.3ms)
+  Rendered worker_messages/new.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 123ms (Views: 109.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:16:59 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (22.6ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 123ms (Views: 93.4ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:17:01 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (44.3ms)
+  Rendered worker_messages/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 398ms (Views: 143.1ms | ActiveRecord: 241.4ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:20:36 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (75.7ms)
+  Rendered worker_messages/new.html.erb within layouts/application (77.9ms)
+Completed 200 OK in 149ms (Views: 143.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:20:39 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (45.7ms)
+  Rendered worker_messages/new.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:20:40 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (37.6ms)
+  Rendered worker_messages/new.html.erb within layouts/application (40.1ms)
+Completed 200 OK in 93ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:24:12 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (40.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 112ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:24:14 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (48.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 141ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:24:28 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (37.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 147ms (Views: 144.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:26:00 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (65.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 156ms (Views: 151.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:26:57 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (42.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 113ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 15:36:18 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (1474.9ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (1688.9ms)
+Completed 200 OK in 2577ms (Views: 1067.1ms | ActiveRecord: 1474.9ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 15:37:36 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (541.8ms)
+  Rendered worker_messages/new.html.erb within layouts/application (603.0ms)
+Completed 200 OK in 1482ms (Views: 1433.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 15:38:06 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sq+F1b45EMWUo/cQIx3BER7HapDcpqaoKt9kQyooExM2/2/oTNzLuAA9kyBd9TlRgBZwT9ulE2bBpV/YDJWa9Q==", "worker_message"=>{"worker_id"=>"0000001", "worker_name"=>"qazx", "sex"=>"man", "age"=>"", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"37", "role"=>"管理员", "academic"=>"大专", "factory_id"=>"1", "region"=>"2", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (49.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2905.2ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', 'qazx', 'man', '2012-04-14 07:37:00', '管理员', '大专', 1, '2', '', '', '', '2017-04-14 07:38:07', '2017-04-14 07:38:07')[0m
+  [1m[35m (58.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 4963ms (ActiveRecord: 3012.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE7\xAE\xA1\xE7\x90\x86...' for column 'role' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', 'qazx', 'man', '2012-04-14 07:37:00', '管理员', '大专', 1, '2', '', '', '', '2017-04-14 07:38:07', '2017-04-14 07:38:07')):
+  
+app/controllers/worker_messages_controller.rb:31:in `block in create'
+app/controllers/worker_messages_controller.rb:30:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (260.6ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (96.7ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (170.5ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (776.8ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 15:38:57 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sq+F1b45EMWUo/cQIx3BER7HapDcpqaoKt9kQyooExM2/2/oTNzLuAA9kyBd9TlRgBZwT9ulE2bBpV/YDJWa9Q==", "worker_message"=>{"worker_id"=>"0000001", "worker_name"=>"qazx", "sex"=>"man", "age"=>"", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"37", "role"=>"请选择", "academic"=>"大专", "factory_id"=>"1", "region"=>"2", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (24.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (16.3ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', 'qazx', 'man', '2012-04-14 07:37:00', '请选择', '大专', 1, '2', '', '', '', '2017-04-14 07:38:57', '2017-04-14 07:38:57')[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 41.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE8\xAF\xB7\xE9\x80\x89...' for column 'role' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', 'qazx', 'man', '2012-04-14 07:37:00', '请选择', '大专', 1, '2', '', '', '', '2017-04-14 07:38:57', '2017-04-14 07:38:57')):
+  
+app/controllers/worker_messages_controller.rb:31:in `block in create'
+app/controllers/worker_messages_controller.rb:30:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (207.4ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (57.2ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.9ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (414.5ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 16:10:03 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sq+F1b45EMWUo/cQIx3BER7HapDcpqaoKt9kQyooExM2/2/oTNzLuAA9kyBd9TlRgBZwT9ulE2bBpV/YDJWa9Q==", "worker_message"=>{"worker_id"=>"0000001", "worker_name"=>"里", "sex"=>"man", "age"=>"", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"07", "birthday(5i)"=>"37", "role"=>"请选择", "academic"=>"大专", "factory_id"=>"1", "region"=>"2", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (156.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (449.4ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000001', '里', 'man', '2012-04-14 07:37:00', '请选择', '大专', 1, '2', '', '', '', '2017-04-14 08:10:15', '2017-04-14 08:10:15')[0m
+  [1m[35m (324.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/6
+Completed 302 Found in 11826ms (ActiveRecord: 931.1ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 16:10:22 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (176.7ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1508.0ms)
+Completed 200 OK in 16837ms (Views: 14220.6ms | ActiveRecord: 176.7ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 16:13:17 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (1742.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (1981.2ms)
+Completed 200 OK in 2634ms (Views: 2478.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 16:14:18 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f+BHb8i4PXdplJvYV148ECwtF9gSpt8NLKgyuOuU2RnGDZE1OU6+JPj/ND2eExg09Y96u4dSykr5FKXBy/hTQ==", "worker_message"=>{"worker_id"=>"0000002", "worker_name"=>"小兰", "sex"=>"女", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"08", "birthday(5i)"=>"13", "role"=>"管理员", "academic"=>"大专", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (9.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (888.1ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000002', '小兰', '女', '2017-04-14 08:13:00', '管理员', '大专', '', '', '', '', '2017-04-14 08:14:19', '2017-04-14 08:14:19')[0m
+  [1m[35m (25.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 1597ms (ActiveRecord: 922.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Incorrect string value: '\xE5\xA5\xB3' for column 'sex' at row 1: INSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000002', '小兰', '女', '2017-04-14 08:13:00', '管理员', '大专', '', '', '', '', '2017-04-14 08:14:19', '2017-04-14 08:14:19')):
+  
+app/controllers/worker_messages_controller.rb:31:in `block in create'
+app/controllers/worker_messages_controller.rb:30:in `create'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (138.4ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (74.7ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (119.5ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (469.4ms)
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 16:16:47 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0f+BHb8i4PXdplJvYV148ECwtF9gSpt8NLKgyuOuU2RnGDZE1OU6+JPj/ND2eExg09Y96u4dSykr5FKXBy/hTQ==", "worker_message"=>{"worker_id"=>"0000002", "worker_name"=>"小兰", "sex"=>"女", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "birthday(4i)"=>"08", "birthday(5i)"=>"13", "role"=>"管理员", "academic"=>"大专", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (90.7ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000002', '小兰', '女', '2017-04-14 08:13:00', '管理员', '大专', '', '', '', '', '2017-04-14 08:16:47', '2017-04-14 08:16:47')[0m
+  [1m[35m (158.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/7
+Completed 302 Found in 372ms (ActiveRecord: 249.4ms)
+
+
+Started GET "/worker_messages/7" for 127.0.0.1 at 2017-04-14 16:16:47 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWorkerMessage Load (105.8ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 7 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 391ms (Views: 255.9ms | ActiveRecord: 105.8ms)
+
+
+Started GET "/worker_messages/7/edit" for 127.0.0.1 at 2017-04-14 16:18:28 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWorkerMessage Load (17.7ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 7 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (84.6ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (142.2ms)
+Completed 200 OK in 261ms (Views: 210.0ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/worker_messages/7" for 127.0.0.1 at 2017-04-14 16:18:35 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWorkerMessage Load (48.6ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 7 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 145ms (Views: 94.6ms | ActiveRecord: 48.6ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 16:18:39 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (27.0ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 221ms (Views: 155.8ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 16:19:07 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 135ms (Views: 107.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 16:19:09 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (125.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (169.4ms)
+Completed 200 OK in 302ms (Views: 284.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 16:21:49 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (3.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (82.2ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (108.9ms)
+Completed 200 OK in 277ms (Views: 246.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 16:22:05 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (2.2ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 129ms (Views: 123.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 16:28:48 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (83.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (139.5ms)
+Completed 200 OK in 339ms (Views: 323.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (24.8ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (38.4ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (385.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ChangeForWorkerMessages (20170414111616)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (10.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ChangeForWorkerMessages (20170414111616)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[35m (60.4ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT GET_LOCK('6871392720379281885', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (16.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to ChangeForWorkerMessages (20170414111616)
+  [1m[35m (107.5ms)[0m  [1m[35mALTER TABLE `worker_messages` CHANGE `birthday` `birthday` date[0m
+  [1m[35m (22.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (61.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170414111616')[0m
+  [1m[35m (25.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (94.8ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('6871392720379281885')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW CREATE TABLE `worker_messages`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'worker_messages'[0m
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:36:40 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (27.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (723.5ms)
+  Rendered worker_messages/new.html.erb within layouts/application (740.8ms)
+Completed 200 OK in 3248ms (Views: 2863.9ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/worker_messages/" for 127.0.0.1 at 2017-04-14 19:38:15 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (23.9ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 98ms (Views: 51.2ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:38:17 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (22.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 115ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:39:04 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (30.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 96ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:40:59 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.6ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:41:03 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (25.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:42:17 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (2.2ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:45:09 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (11.1ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 75ms (Views: 59.1ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:45:10 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (3.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 121ms (Views: 115.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:45:13 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (39.6ms)
+  Rendered worker_messages/new.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:45:17 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (4.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 136ms (Views: 127.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:45:55 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (6.8ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 106ms (Views: 96.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:46:13 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.8ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 86ms (Views: 81.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:46:14 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (4.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 112ms (Views: 106.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:46:15 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (30.2ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 84ms (Views: 52.0ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:46:17 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (3.9ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 69ms (Views: 63.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:46:36 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (20.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:46:39 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (2.1ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 79ms (Views: 74.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 19:46:40 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (14.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (12.4ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 102ms (Views: 59.5ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 19:46:50 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (1.1ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 52.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 19:47:07 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 19:47:17 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (2.1ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 84ms (Views: 79.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:47:31 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 84ms (Views: 80.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:48:25 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (8.8ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 91ms (Views: 77.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:48:28 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (7.2ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 86ms (Views: 76.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:48:32 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (24.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 19:49:30 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hbZYz/nk5G3WzIM7W4Weem3R7E/MvfK4sGApiXdhp54/O3lpAUU9pe5OdMLnZb7/TibZ+/aBGry2BAig5NpSDw==", "worker_message"=>{"worker_id"=>"0000003", "worker_name"=>"丽丽", "sex"=>"女", "age"=>"", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "role"=>"管理员", "academic"=>"大专", "factory_id"=>"2", "region"=>"2", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (60.9ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `factory_id`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000003', '丽丽', '女', '2012-04-14', '管理员', '大专', 2, '2', '', '', '', '2017-04-14 11:49:30', '2017-04-14 11:49:30')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/8
+Completed 302 Found in 77ms (ActiveRecord: 64.0ms)
+
+
+Started GET "/worker_messages/8" for 127.0.0.1 at 2017-04-14 19:49:30 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWorkerMessage Load (0.7ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 8 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 47ms (Views: 43.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:50:01 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 95ms (Views: 88.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:51:18 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:52:56 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (1.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 81ms (Views: 69.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/worker_messages/8" for 127.0.0.1 at 2017-04-14 19:53:01 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 8 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 19:53:06 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (27.7ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 101ms (Views: 95.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 19:53:25 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (1.1ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 19:53:27 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (33.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:07:36 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (23.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 87ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-14 20:14:10 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (10.5ms)
+Completed 200 OK in 72ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-14 20:14:15 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (9.9ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/" for 127.0.0.1 at 2017-04-14 20:14:23 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (473.7ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (508.8ms)
+Completed 200 OK in 624ms (Views: 117.7ms | ActiveRecord: 473.7ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:24:11 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (35.7ms)
+  Rendered worker_messages/new.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 141ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 20:24:17 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (1.3ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 61ms (Views: 57.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 20:24:18 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (119.6ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (23.4ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 261ms (Views: 64.3ms | ActiveRecord: 119.6ms)
+
+
+Started PATCH "/worker_messages/6" for 127.0.0.1 at 2017-04-14 20:24:28 +0800
+Processing by WorkerMessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5MYNyKt9G1Upya3B1WSL98TXuvFGQaHOsFpmFWkOa7K+IRwv1xzxyF+2cOX7cL1svJLJN9dK/T9PIEzlDgzpvA==", "worker_message"=>{"worker_id"=>"0000001", "worker_name"=>"里", "sex"=>"请选择", "age"=>"", "birthday(1i)"=>"2012", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "role"=>"请选择", "academic"=>"请选择", "factory_id"=>"1", "region"=>"2", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Update Worker message", "id"=>"6"}
+  [1m[36mWorkerMessage Load (0.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (371.8ms)[0m  [1m[33mUPDATE `worker_messages` SET `sex` = '请选择', `academic` = '请选择', `updated_at` = '2017-04-14 12:24:29' WHERE `worker_messages`.`id` = 6[0m
+  [1m[35m (125.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/6
+Completed 302 Found in 1226ms (ActiveRecord: 498.3ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 20:24:30 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (3.1ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 98ms (Views: 54.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 20:34:06 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (1.1ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (78.0ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 183ms (Views: 176.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 20:34:08 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 176ms (Views: 168.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 20:34:15 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (2.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 72ms (Views: 66.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 20:35:51 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 118ms (Views: 110.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 20:39:15 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (34.1ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (86.8ms)
+Completed 200 OK in 182ms (Views: 169.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 20:39:21 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (5.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 101ms (Views: 93.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 20:40:43 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (13.7ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 97ms (Views: 81.6ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:54:41 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (64.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (67.2ms)
+Completed 200 OK in 722ms (Views: 470.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:55:13 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (64.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (66.2ms)
+Completed 200 OK in 251ms (Views: 246.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:55:23 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (49.0ms)
+  Rendered worker_messages/new.html.erb within layouts/application (77.5ms)
+Completed 200 OK in 289ms (Views: 287.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:55:35 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (22.4ms)
+  Rendered worker_messages/new.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 139ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 20:56:00 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (45.6ms)
+  Rendered worker_messages/new.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 145ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-14 20:57:55 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"37X5X5OVPAa4llunLmJJHKvlgI5NVXnjYPsTNjYEeGRM3+9mLxTrLr8KI+dqBhFD5ZJ3XWe2VpMOM8jvFfZkfw==", "worker_message"=>{"worker_id"=>"0000004", "worker_name"=>"飒飒", "sex"=>"男", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"14", "role"=>"请选择", "academic"=>"大专", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (12.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (238.0ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('0000004', '飒飒', '男', '2017-04-14', '请选择', '大专', '', '', '', '', '2017-04-14 12:57:59', '2017-04-14 12:57:59')[0m
+  [1m[35m (455.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/9
+Completed 302 Found in 4799ms (ActiveRecord: 4547.1ms)
+
+
+Started GET "/worker_messages/9" for 127.0.0.1 at 2017-04-14 20:58:00 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWorkerMessage Load (124.7ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 9 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 499ms (Views: 307.7ms | ActiveRecord: 124.7ms)
+
+
+Started GET "/worker_messages/9" for 127.0.0.1 at 2017-04-14 20:59:56 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (A regular expression or a proc or lambda must be supplied as :with):
+  
+app/models/worker_message.rb:6:in `<class:WorkerMessage>'
+app/models/worker_message.rb:1:in `<top (required)>'
+app/controllers/worker_messages_controller.rb:68:in `set_worker_message'
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (29.2ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.2ms)
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.7ms)
+Started GET "/worker_messages/9" for 127.0.0.1 at 2017-04-14 21:00:14 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWorkerMessage Load (5.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 9 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 121ms (Views: 72.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/worker_messages/9/edit" for 127.0.0.1 at 2017-04-14 21:11:43 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWorkerMessage Load (7.8ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 9 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (54.5ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 248ms (Views: 134.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:11:46 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (9.3ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 81ms (Views: 62.8ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:12:32 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (84.2ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 161ms (Views: 75.1ms | ActiveRecord: 84.2ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:12:51 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (1.6ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 146ms (Views: 143.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 21:15:11 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (28.7ms)
+  Rendered worker_messages/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 117ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:16:09 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (59.6ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (66.4ms)
+Completed 200 OK in 154ms (Views: 92.0ms | ActiveRecord: 59.6ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 21:16:11 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (48.1ms)
+  Rendered worker_messages/new.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 148ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:16:14 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 93ms (Views: 90.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 21:16:15 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.6ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 77ms (Views: 72.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:16:26 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (3.6ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 98ms (Views: 85.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/worker_messages/7" for 127.0.0.1 at 2017-04-14 21:16:58 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mWorkerMessage Load (1.2ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 7 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 21:17:01 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (123.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (133.2ms)
+Completed 200 OK in 235ms (Views: 91.7ms | ActiveRecord: 123.4ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 21:17:02 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.4ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (44.2ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 145ms (Views: 142.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 21:19:59 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (0.5ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 81ms (Views: 75.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 22:48:39 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (764.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (248.5ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (452.2ms)
+Completed 200 OK in 1814ms (Views: 1412.0ms | ActiveRecord: 302.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-14 22:48:46 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (36.6ms)
+Completed 200 OK in 108ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/" for 127.0.0.1 at 2017-04-14 22:49:08 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (5.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 86ms (Views: 78.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-14 22:49:20 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/frank/.rvm/gems/ruby-2.2.6/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (15.9ms)
+Completed 200 OK in 48ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages/" for 127.0.0.1 at 2017-04-14 22:49:30 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (19.2ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 106ms (Views: 76.9ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/worker_messages/6" for 127.0.0.1 at 2017-04-14 22:50:01 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (5.1ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 105ms (Views: 34.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/worker_messages/6/edit" for 127.0.0.1 at 2017-04-14 22:50:19 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mWorkerMessage Load (3.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 6 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (216.6ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (261.1ms)
+Completed 200 OK in 374ms (Views: 330.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 22:51:04 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (6.3ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 94ms (Views: 85.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-14 22:51:08 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (59.9ms)
+  Rendered worker_messages/new.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 131ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-14 22:52:18 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (4.2ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-15 16:25:35 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (2786.6ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (3131.6ms)
+Completed 200 OK in 6049ms (Views: 2963.1ms | ActiveRecord: 2786.6ms)
+
+
+Started GET "/worker_messages/9" for 127.0.0.1 at 2017-04-15 16:25:51 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mWorkerMessage Load (117.8ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 9 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 1271ms (Views: 1084.5ms | ActiveRecord: 117.8ms)
+
+
+Started GET "/worker_messages" for 127.0.0.1 at 2017-04-15 16:32:16 +0800
+Processing by WorkerMessagesController#index as HTML
+  Rendering worker_messages/index.html.erb within layouts/application
+  [1m[36mWorkerMessage Load (1047.4ms)[0m  [1m[34mSELECT `worker_messages`.* FROM `worker_messages`[0m
+  Rendered worker_messages/index.html.erb within layouts/application (1172.5ms)
+Completed 200 OK in 1644ms (Views: 544.2ms | ActiveRecord: 1047.4ms)
+
+
+Started GET "/worker_messages/new" for 127.0.0.1 at 2017-04-15 16:50:54 +0800
+Processing by WorkerMessagesController#new as HTML
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (143.2ms)
+  Rendered worker_messages/new.html.erb within layouts/application (159.5ms)
+Completed 200 OK in 508ms (Views: 471.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-15 16:51:05 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jwZ0hLUn6+5IhnIQN1Ak97QLtdRveOho+RUizGCKmpCgJYuXknQfjdwHPN0Ldc697Gd6+IAJPQyoU59D/hLKww==", "worker_message"=>{"worker_id"=>"", "worker_name"=>"", "sex"=>"男", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"15", "role"=>"请选择", "academic"=>"请选择", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (39.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (30.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering worker_messages/new.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (79.6ms)
+  Rendered worker_messages/new.html.erb within layouts/application (85.2ms)
+Completed 200 OK in 389ms (Views: 252.1ms | ActiveRecord: 70.2ms)
+
+
+Started POST "/worker_messages" for 127.0.0.1 at 2017-04-15 16:51:34 +0800
+Processing by WorkerMessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AeZ40EJl/OHZLrZxc0klBs9tCQ97SoB8wcaU5OOE6xewytyXXu7OcbniaMiNuqTa/uZryXaON5QLwcVzkFcXmA==", "worker_message"=>{"worker_id"=>"00000005", "worker_name"=>"lilll", "sex"=>"男", "age"=>"", "birthday(1i)"=>"2017", "birthday(2i)"=>"4", "birthday(3i)"=>"15", "role"=>"取送人员", "academic"=>"本科结业", "factory_id"=>"", "region"=>"", "delFlag"=>"", "S_01"=>"", "S_o2"=>""}, "commit"=>"Create Worker message"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (644.4ms)[0m  [1m[32mINSERT INTO `worker_messages` (`worker_id`, `worker_name`, `sex`, `birthday`, `role`, `academic`, `region`, `delFlag`, `S_01`, `S_o2`, `created_at`, `updated_at`) VALUES ('00000005', 'lilll', '男', '2017-04-15', '取送人员', '本科结业', '', '', '', '', '2017-04-15 08:51:34', '2017-04-15 08:51:34')[0m
+  [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/worker_messages/10
+Completed 302 Found in 1444ms (ActiveRecord: 696.0ms)
+
+
+Started GET "/worker_messages/10" for 127.0.0.1 at 2017-04-15 16:51:36 +0800
+Processing by WorkerMessagesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWorkerMessage Load (129.3ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 10 LIMIT 1[0m
+  Rendering worker_messages/show.html.erb within layouts/application
+  Rendered worker_messages/show.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 349ms (Views: 177.9ms | ActiveRecord: 129.3ms)
+
+
+Started GET "/worker_messages/10/edit" for 127.0.0.1 at 2017-04-15 16:51:44 +0800
+Processing by WorkerMessagesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWorkerMessage Load (2.9ms)[0m  [1m[34mSELECT  `worker_messages`.* FROM `worker_messages` WHERE `worker_messages`.`id` = 10 LIMIT 1[0m
+  Rendering worker_messages/edit.html.erb within layouts/application
+  Rendered worker_messages/_form.html.erb (85.4ms)
+  Rendered worker_messages/edit.html.erb within layouts/application (87.9ms)
+Completed 200 OK in 211ms (Views: 180.9ms | ActiveRecord: 2.9ms)
+
+
