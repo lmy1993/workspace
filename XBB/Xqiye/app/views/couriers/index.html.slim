@@ -13,7 +13,7 @@ table.table.table-striped
   tbody
     - @couriers.each do |courier|
       tr
-        td = courier.mobile
+        td = courier.email
         td = courier.name
         td
           - if courier.status?

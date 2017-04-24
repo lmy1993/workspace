@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-<<<<<<< HEAD
-    <title>XBB</title>
-=======
-    <title>Qiye</title>
->>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
+
+    <title> 后台</title>
+
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,13 +12,13 @@
   </head>
 
   <body>
-<<<<<<< HEAD
-    <%= yield %>
-=======
+
   	<%= render "layouts/menu"%>
   	<div class="container" id="container">
-    <%= yield %>
+      <%= bootstrap_flash %>
+      <%= yield %>
+    
     </div>
->>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
+
   </body>
 </html>

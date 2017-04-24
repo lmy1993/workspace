@@ -1,5 +1,5 @@
 class WorkerMessagesController < ApplicationController
-
+  before_filter :authenticate_workeraccount!
   before_action :set_worker_message, only: [:show, :edit, :update, :destroy]
 
   # GET /worker_messages

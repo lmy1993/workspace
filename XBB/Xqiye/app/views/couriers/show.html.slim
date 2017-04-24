@@ -7,7 +7,7 @@
         table.table.table-striped
           tr
             td width='15%' 名字
-            td width='35%' = @courier.name
+            td  = @courier.name
 
 .row
   .col-md-12
@@ -19,11 +19,19 @@
           thead
             tr
               th width='15%' 名字
+              th width='20%' 地址
+              th width='25%' 备注
+              th
           tbody
             - @courier.stations.each do |station|
               tr
                 td 
                   = link_to station.name, station
+                td
+                  = station.address
+                td 
+                  = station.comment
+                td
 
 = link_to 'Edit', edit_courier_path(@courier)
 '|

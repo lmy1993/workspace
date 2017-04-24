@@ -2,8 +2,8 @@ class DeviseCreateCouriers < ActiveRecord::Migration[5.0]
   def change
     create_table :couriers do |t|
       ## Database authenticatable
-      t.string :mobile, null: false
-      t.string :name   #Add by Fei
+      t.string :mobile           
+      t.string :name                 #Add by Fei
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
       #Add by Fei

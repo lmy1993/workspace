@@ -15,5 +15,12 @@
  *= require_tree .
  *= require_self
  */
+
+div.test{
+	height:200px;
+	width:600px;
+	border:sold;
+}
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
