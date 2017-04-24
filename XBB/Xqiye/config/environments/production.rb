@@ -54,11 +54,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-<<<<<<< HEAD
-  # config.active_job.queue_name_prefix = "XBB_#{Rails.env}"
-=======
-  # config.active_job.queue_name_prefix = "qiye_#{Rails.env}"
->>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
+
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

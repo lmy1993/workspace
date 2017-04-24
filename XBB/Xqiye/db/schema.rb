@@ -10,30 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170423110643) do
-=======
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170414111616) do
-
-  create_table "worker_messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=gbk" do |t|
-    t.string   "worker_id",                collation: "latin1_swedish_ci"
-    t.string   "worker_name"
-    t.string   "sex"
-    t.integer  "age"
-    t.date     "birthday"
-    t.string   "role"
-    t.string   "academic"
-    t.integer  "factory_id"
-    t.string   "region",                   collation: "latin1_swedish_ci"
-    t.string   "delFlag",                  collation: "latin1_swedish_ci"
-    t.string   "S_01",                     collation: "latin1_swedish_ci"
-    t.string   "S_o2",                     collation: "latin1_swedish_ci"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-=======
-ActiveRecord::Schema.define(version: 20170419061140) do
->>>>>>> 8eb7e8e12c1eefaadda8ec00376f7d30b84e2337
 
   create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "address"
@@ -114,6 +91,23 @@ ActiveRecord::Schema.define(version: 20170419061140) do
     t.datetime "updated_at",                          null: false
   end
 
+  create_table "worker_messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "worker_id"
+    t.string   "worker_name"
+    t.string   "sex"
+    t.integer  "age"
+    t.date     "birthday"
+    t.string   "role"
+    t.string   "academic"
+    t.integer  "factory_id"
+    t.string   "region"
+    t.string   "delFlag"
+    t.string   "S_01"
+    t.string   "S_o2"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "workeraccounts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email"
     t.string   "username",               default: "", null: false
@@ -130,7 +124,6 @@ ActiveRecord::Schema.define(version: 20170419061140) do
     t.datetime "updated_at",                          null: false
     t.index ["id"], name: "index_workeraccounts_on_id", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_workeraccounts_on_reset_password_token", unique: true, using: :btree
->>>>>>> a82a824e011bd455532870340f2a7e3f8f67af7c
   end
 
 end
