@@ -7,6 +7,7 @@
     = f.input :comment
     = f.input :lat
     = f.input :lng
+    = f.association :region, as: :string
 
   .form-actions
     = f.button :submit
@@ -30,6 +31,7 @@ javascript:
       if(data){
         $("#station_lat").val(data['lat'])
         $("#station_lng").val(data['lng']) 
+        $("#station_region_id").val(data['region_id'])
       }
     });
   })

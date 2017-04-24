@@ -52,7 +52,7 @@ gem 'qiniu', '~> 6.8.1'
 
 gem "select2-rails"
 gem 'rest-client'
-#gem 'acts_as_tree', github: 'amerine/acts_as_tree'
+gem 'acts_as_tree', github: 'amerine/acts_as_tree'
 
 gem 'bootstrap-editable-rails'
 

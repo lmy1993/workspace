@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/amerine/acts_as_tree.git
+  revision: 5fc75e9561bfc53a3307552a56fe30deb88f002a
+  specs:
+    acts_as_tree (2.6.1)
+      activerecord (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -263,6 +270,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_tree!
   awesome_print
   bootstrap-editable-rails
   bootstrap-sass (~> 3.3.6)

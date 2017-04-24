@@ -25,8 +25,9 @@
             td width='15%' style="border:#cccccc solid 1px;" 
               b Comment
             td width='35%' style="border:#cccccc solid 1px;" = @station.comment
-            td width='15%' 
-            td width='35%' 
+            td width='15%' style="border:#cccccc solid 1px;" 
+              b Region
+            td width='35%' style="border:#cccccc solid 1px;" = @station.region_id
 
 = link_to 'Edit', edit_station_path(@station)
 '  |

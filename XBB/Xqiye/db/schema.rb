@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423110643) do
+ActiveRecord::Schema.define(version: 20170424082324) do
 
   create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "address"
@@ -81,6 +81,15 @@ ActiveRecord::Schema.define(version: 20170423110643) do
     t.index ["station_id"], name: "index_factories_stations_on_station_id", using: :btree
   end
 
+  create_table "regions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.integer  "parent_id"
+    t.integer  "level"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["parent_id"], name: "index_regions_on_parent_id", using: :btree
+  end
+
   create_table "stations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "address"
@@ -89,6 +98,8 @@ ActiveRecord::Schema.define(version: 20170423110643) do
     t.decimal  "lng",        precision: 10, scale: 6
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "region_id"
+    t.index ["region_id"], name: "index_stations_on_region_id", using: :btree
   end
 
   create_table "worker_messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
