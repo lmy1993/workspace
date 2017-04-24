@@ -1,13 +1,14 @@
-class DeviseCreateCouriers < ActiveRecord::Migration[5.0]
+class CreateFactories < ActiveRecord::Migration[5.0]
   def change
-    create_table :couriers do |t|
+    create_table :factories do |t|
       ## Database authenticatable
-      t.string :mobile           
-      t.string :name                 #Add by Fei
-      t.string :email,              null: false, default: ""
+      #t.string :mobile, null: false
+      t.string :factory_ID,null: false ,default:""          # Add By Frank
+      t.string :mobile, null: true, default: ""
+      t.string :email              ,null: true, default: ""   
+      
       t.string :encrypted_password, null: false, default: ""
-      #Add by Fei
-      t.boolean :status, default: false
+
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
@@ -22,9 +23,6 @@ class DeviseCreateCouriers < ActiveRecord::Migration[5.0]
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
-      #Add by Fei
-      t.datetime :locked_at
-
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
@@ -36,13 +34,17 @@ class DeviseCreateCouriers < ActiveRecord::Migration[5.0]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
+      t.string :name
+      t.string :tel
+      t.boolean :status, default: false
+
 
       t.timestamps null: false
     end
 
-    add_index :couriers, :email,                unique: true
-    add_index :couriers, :reset_password_token, unique: true
-    # add_index :couriers, :confirmation_token,   unique: true
-    # add_index :couriers, :unlock_token,         unique: true
+    add_index :factories, :mobile,                unique: true
+    add_index :factories, :reset_password_token, unique: true
+    # add_index :factories, :confirmation_token,   unique: true
+    # add_index :factories, :unlock_token,         unique: true
   end
 end

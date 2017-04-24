@@ -1,6 +1,9 @@
 class StationsController < ApplicationController
-  before_action :set_station, only: [:show, :edit, :update, :destroy]
+  #load_and_authorize_resource
 
+  before_action :set_station, only: [:show, :edit, :update, :destroy]
+  
+  before_filter :authenticate_workeraccount!  
   # GET /stations
   # GET /stations.json
   def index

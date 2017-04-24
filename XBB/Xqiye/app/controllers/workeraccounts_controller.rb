@@ -1,6 +1,7 @@
 class WorkeraccountsController < ApplicationController
+  #load_and_authorize_resource
   before_action :set_workeraccount, only: [:show,:edit,:update,:destroy,:reset]
-  #before_filter :authenticate_workeraccount!
+  before_filter :authenticate_workeraccount!
   def index
     #@workers = Workeraccount.all
     @workeraccounts = Workeraccount.paginate(page: params[:page], per_page: 10).order(updated_at: :desc)
@@ -47,27 +48,13 @@ class WorkeraccountsController < ApplicationController
     end
   end
 
-  def resetpassword
-  	# respond_to do |format|
-   #    if @workeraccount.update(workeraccount_params)
-   #      format.html { redirect_to workeraccounts_path, notice: 'Workeraccount was successfully updated.' }
-   #      format.json { render :index, status: :ok, location: @workeraccount }
-   #    else
-   #      format.html { render :reset }
-   #      format.json { render json: @workeraccount.errors, status: :unprocessable_entity }
-   #    end
-   #  end
-  end
 
   private
   	  def set_workeraccount
-      	 @workeraccount = Workeraccount.find(params[:id])
+      	@workeraccount = Workeraccount.find(params[:id])
       end
-	  def workeraccount_params
-		params.require(:workeraccount).permit(:email, :password, :password_confirmation)
-	  end
-	  # def reset_params
-	  # 	params.require(@workeraccount).permit(:password, :password_confirmation)
-	  # end
+  	  def workeraccount_params
+  		  params.require(:workeraccount).permit(:email, :password, :password_confirmation)
+  	  end
 
 end

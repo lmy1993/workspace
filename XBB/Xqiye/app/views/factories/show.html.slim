@@ -7,7 +7,9 @@
         table.table.table-striped
           tr
             td width='15%' 名字
-            td  = @courier.name
+            td width='35%' = @factory.name
+            td width='15%' 电话
+            td width='35%' = @factory.tel
 
 .row
   .col-md-12
@@ -19,20 +21,13 @@
           thead
             tr
               th width='15%' 名字
-              th width='20%' 地址
-              th width='25%' 备注
-              th
           tbody
-            - @courier.stations.each do |station|
+            - @factory.stations.each do |station|
               tr
                 td 
                   = link_to station.name, station
-                td
-                  = station.address
-                td 
-                  = station.comment
-                td
 
-= link_to 'Edit', edit_courier_path(@courier)
+
+= link_to 'Edit', edit_factory_path(@factory)
 '|
-= link_to 'Back', couriers_path
+= link_to 'Back', factories_path
